@@ -1,0 +1,9 @@
+{
+  "mlflow_url": "http://localhost:5050",
+  "calculators": [
+    { "name": "ppml",       "label": "Production-Prediction-ML",       "internal_url": "http://ppml-api:8000",       "host_url": "http://localhost:8000" },
+    { "name": "petro",      "label": "3D-Petrophysical-Prediction-ML", "internal_url": "http://petro-api:8001",      "host_url": "http://localhost:8001" },
+    { "name": "weather",    "label": "Weather-Forecasting-ML",         "internal_url": "http://weather-api:8002",    "host_url": "http://localhost:8002" },
+    { "name": "pointcloud", "label": "Point-Cloud-ML",                 "internal_url": "http://pointcloud-api:8003", "host_url": "http://localhost:8003" }
+  ]
+}

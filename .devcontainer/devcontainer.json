@@ -1,0 +1,27 @@
+{
+  "name": "ml-platform-ui",
+  "image": "node:20-slim",
+  "workspaceFolder": "/workspaces/ML-Platform-UI",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+  "forwardPorts": [
+    5173
+  ],
+  "portsAttributes": {
+    "5173": {
+      "label": "ML Platform UI",
+      "onAutoForward": "notify"
+    }
+  },
+  "postCreateCommand": "npm install",
+  "remoteUser": "root",
+  "containerEnv": {
+    "CALC_HOST": "host.docker.internal"
+  }
+}
